@@ -23,7 +23,7 @@ function Header() {
             </ul>
 
             <div className="flex items-center space-x-1 hover:border-4 hover:border-black cursor-pointer 
-                p-2 hover:rounded-lg">
+                p-2 hover:rounded-lg hover:duration-1000">
                 <FaShoppingCart />
                 <span>0</span>
                 </div>
