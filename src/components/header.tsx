@@ -11,13 +11,13 @@ function Header() {
             </Link>
             
             <ul className="flex space-x-10">
-                <Link href={'#'} className="hover:border-b-4 hover:border-b-black hover:duration-200">
+                <Link href={'/'} className="hover:border-b-4 hover:border-b-black hover:duration-200">
                     Home
                 </Link>
-                <Link href={'#'} className="hover:border-b-4 hover:border-b-black hover:duration-200">
+                <Link href={'/products'} className="hover:border-b-4 hover:border-b-black hover:duration-200">
                     Products
                 </Link>
-                <Link href={'#'} className="hover:border-b-4 hover:border-b-black hover:duration-200">
+                <Link href={'/categories'} className="hover:border-b-4 hover:border-b-black hover:duration-200">
                     Categories
                 </Link>
             </ul>
