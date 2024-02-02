@@ -5,4 +5,6 @@ export default interface productCardType{
     title: string;
     rating: ratingType;
     description: string;
+    id: number;
+    price: number;
 }

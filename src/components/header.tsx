@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa"
 
+const CartItems = [];
+
 function Header() {
     return (
         <header className="text-dark text-xl font-bold flex items-center justify-between py-4 px-10 
@@ -24,7 +26,7 @@ function Header() {
             <div className="flex items-center space-x-1 hover:border-4 hover:border-black cursor-pointer 
                 p-2 hover:rounded-lg hover:duration-1000">
                 <FaShoppingCart />
-                <span>0</span>
+                <span>{CartItems.length}</span>
                 </div>
         </header>
     );
