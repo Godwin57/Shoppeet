@@ -7,7 +7,7 @@ async function ProductPage() {
     const products = await fetchData(URL);
 
     return (
-        <div>
+        <div className="flex flex-wrap space-x-10 space-y-10 justify-center">
             {products.map((product:productType) => (
                 <ProductCard imageurl={product.image} title={product.title} rating = {product.rating} 
                 description={product.description} />
