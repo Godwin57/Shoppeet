@@ -4,9 +4,9 @@ import { FaArrowRight } from "react-icons/fa"
 
 export default function Homepage(){
     return(
-        <div className="px-6">
+        <div className="px-6 flex space-x-6">
             <div className="flex flex-col space-y-5">
-                <div>
+                <div className="space-y-3">
                     <h1 className="text-3xl font-bold mb-6">Shoppeet <span>here!!!</span></h1>
                     <p className="font-light text-xl">All your favorites in one place</p>
                 </div>
@@ -20,6 +20,8 @@ export default function Homepage(){
             </div>
 
         {/* <Image /> */}
+        <Image src={"/home-appliance.jpg"} alt="Picture of some home appliances" width={800} height={1000} 
+        className="hidden lg:block"/>
         </div>
     )
 }

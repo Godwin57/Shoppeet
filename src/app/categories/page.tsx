@@ -12,10 +12,9 @@ async function CateogoriesPage() {
 
     const categories = getUniqueElem(products.map((product:productType) => product.category));
 
-
     return (
         <div>
-            <h1>Available categories:</h1>
+            <h1 className="font-bold text-2xl">Available categories:</h1>
             {categories.map((category:string) => (
                 <h2 key={category}>{category}</h2>
             ))}

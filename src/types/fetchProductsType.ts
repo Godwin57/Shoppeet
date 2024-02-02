@@ -1,4 +1,4 @@
-interface ratingType {
+export interface ratingType {
     rate: number;
     count: number;
 }
