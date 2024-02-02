@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   description: 'Your leading e-commerce platform to buy quality and cherishable goods',
 }
 
+const CartItems = ['yes', 'no'];
+
 export default function RootLayout({
   children,
 }: {
@@ -21,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Header/>
+        <Header CartItems={CartItems}/>
         <div className='mt-10'>{children}</div>
         </body>
     </html>

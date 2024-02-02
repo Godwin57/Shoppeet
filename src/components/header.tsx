@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa"
 
-const CartItems = [];
-
-function Header() {
+function Header({CartItems}:{CartItems:string[]}) {
     return (
         <header className="text-dark text-xl font-bold flex items-center justify-between py-4 px-10 
             border-b-4 border-b-gray-200">
@@ -23,11 +21,11 @@ function Header() {
                 </Link>
             </ul>
 
-            <div className="flex items-center space-x-1 hover:border-4 hover:border-black cursor-pointer 
-                p-2 hover:rounded-lg hover:duration-1000">
+            <Link className="flex items-center space-x-1 hover:border-4 hover:border-black cursor-pointer 
+                p-2 hover:rounded-lg hover:duration-1000" href={'/cart'}>
                 <FaShoppingCart />
                 <span>{CartItems.length}</span>
-                </div>
+            </Link>
         </header>
     );
 }
