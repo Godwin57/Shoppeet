@@ -1,31 +1,32 @@
-import type { Metadata } from 'next'
-import Header from '@/components/Header'
-import "./globals.css"
-import { Roboto } from 'next/font/google'
- 
+import type { Metadata } from "next";
+import Header from "@/components/Header";
+import "./globals.css";
+import { Roboto } from "next/font/google";
+
 const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
+    weight: "400",
+    subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "Shoppeet",
-  description: 'Your leading e-commerce platform to buy quality and cherishable goods',
-}
+    title: "Shoppeet",
+    description:
+        "Your leading e-commerce platform to buy quality and cherishable goods",
+};
 
-const CartItems = ['yes', 'no'];
+const CartItems = ["yes", "no", "maybe"];
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className={roboto.className}>
-        <Header CartItems={CartItems}/>
-        <div className='mt-10'>{children}</div>
-        </body>
-    </html>
-  )
+    return (
+        <html lang="en">
+            <body className={roboto.className}>
+                <Header CartItems={CartItems} />
+                <div className="mt-10">{children}</div>
+            </body>
+        </html>
+    );
 }
